@@ -1,0 +1,41 @@
+body{
+    background-image: linear-gradient(to right,
+     rgb(197, 171, 197) ,
+     rgb(180, 33, 180));
+    color: rgb(226, 226, 226);
+    
+}
+.container{
+    text-align: center;
+    margin-top: 6rem;
+}
+input[type=text]{
+    width: 15rem;
+    height: 3rem;
+    border: 2px rgb(61, 1, 53) solid;
+    border-radius: 5px;
+    padding: 5px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 40rem;
+}
+input[type=submit]{
+    width: 5rem;
+    height: 30px;
+    background-color: #ac22ac;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+input[type=submit]:hover{
+    background-color: rgb(179, 96, 147);
+}
+@media screen and (max-width:700px) {
+    input[type=text]{
+        width: 16rem;
+        transition: width 0.4s ease-in-out;
+    }
+    input[type=text]:focus {
+        width: 20rem;
+    }
+}
