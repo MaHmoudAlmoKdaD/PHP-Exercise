@@ -1,7 +1,8 @@
 <?php 
     function is_palindrome($input){
-        for( $i=0; $i<(strlen($input) / 2); $i+=2 ){
-            $end = strlen($input) - 1 - $i;
+        for( $i=0; $i<=(strlen($input) / 2); $i++ ){
+            $end = strlen($input) - 1 - $i ;
+            echo $i ,$end. "<br>";
             if($input[$i] != $input[$end]){
                 return False;
             }
@@ -28,8 +29,8 @@
             <?php 
             if(isset($_POST['input']))
                 echo (is_palindrome($_POST['input'])) ? 
-                    "Great, It's Palindrome" : 
-                    7yu"Ops, It's not Palindrome"; ?>
+                    "Greats, It's Palindrome" : 
+                    "Ops, It's not Palindrome"; ?>
         </h1>
     </div>
 </body>
