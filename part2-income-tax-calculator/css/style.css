@@ -1,0 +1,54 @@
+body{
+    background-image: linear-gradient(to right,
+     rgb(197, 171, 197) ,
+     rgb(180, 33, 180));
+    color: rgb(226, 226, 226);
+    
+}
+.container{
+    text-align: center;
+}
+input[type=number]{
+    width: 30rem;
+    height: 3rem;
+    border: 2px rgb(61, 1, 53) solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* input[type=radio]{
+    margin: .3rem  1rem ;
+} */
+input[type=submit]{
+    width: 5rem;
+    height: 30px;
+    background-color: #ac22ac;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+input[type=submit]:hover{
+    background-color: rgb(179, 96, 147);
+}
+
+table.mytable-marg{
+    margin-top: 2rem;
+	border-collapse: collapse;
+}
+table.mytable-marg td, table.mytable-marg th{
+  border: 1px solid #ccc;
+  padding: 20px;
+
+}
+.mytable-marg{
+	margin:0 auto;
+}
+.error {
+    color: red;
+}
+.hidden{
+    display: block;
+}
+@media  screen and (max-width:600px) {
+    input[type=number]{
+        width: 18rem;
+    }
+}
